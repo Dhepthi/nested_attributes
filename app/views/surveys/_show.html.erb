@@ -1,0 +1,24 @@
+
+
+<% form_for survey do |f| %>
+  
+<ol>
+<% f.fields_for :questions do |builder| %>
+     <li>
+    <%=h builder.object.content %>
+    <ul>
+     <% builder.fields_for :answers do |answer| %>
+       <li><%=h answer.object.content %></li>
+    <% end %>
+    </ul>
+<%end %>
+  </li>
+ <p><%= link_to_add_fields "Add Question", f, :questions %></p>
+<%= f.submit "Submit", :class =>"aa" %>
+<% end %>
+
+</ol>
+ 
+
+
+
