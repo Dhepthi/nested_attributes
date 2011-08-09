@@ -1,4 +1,3 @@
-Example application for Railscasts. To get started:
+This is the sample application created for nested attributes. I learnt this through Rails casts video.
 
-  rake db:migrate
-  script/server
+The sample application for Survey with dynamic rendering of forms has been done
